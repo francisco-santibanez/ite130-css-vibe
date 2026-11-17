@@ -37,4 +37,4 @@ En rad delas i två lika stora kolumner.
 
 ## Resultat
 
-![Skärmdump av webbplatsen](images/exempel.png)
+![Skärmdump av webbplatsen](<images/Skärmavbild 2026-11-17 kl. 23.50.25.png>)
