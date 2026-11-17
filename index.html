@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Webbgrunder - ITE130</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Skiplänk gör att tangentbordsanvändare kan hoppa direkt till innehållet. -->
+    <a class="skip-link" href="#main-content">Hoppa till innehållet</a>
+
+    <!-- Sidhuvud och enkel navigation. navbar-klasser kommer från Bootstrap. -->
+    <header class="site-header">
+      <nav class="container navbar navbar-dark px-0" aria-label="Huvudnavigation">
+        <a class="navbar-brand font-weight-bold" href="#top">ITE130</a>
+        <div class="d-flex">
+          <a class="nav-link text-white px-2" href="#grunder">Grunder</a>
+          <a class="nav-link text-white px-2" href="#exempel">Exempel</a>
+          <span class="status-badge" aria-label="Guiden är redo"><span aria-hidden="true"></span>Redo</span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Huvudinnehållet kan identifieras av en skärmläsare eller annan användare. -->
+    <main id="main-content">
+      <!-- Hero visar sidans namn och den stora introduktionsbilden. -->
+      <section class="hero">
+        <div class="container">
+          <!-- .row och .col-lg-6 skapar en responsiv Bootstrap-layout i två kolumner. -->
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <p class="eyebrow">SNABBSTART</p>
+              <h1>Bygg bättre gränssnitt</h1>
+              <p class="lead">Tre centrala verktyg för kursen Interaktiva användargränssnitt.</p>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <!-- Den lokala bilden laddas från images-mappen och har en beskrivande alt-text. -->
+              <img
+                class="img-fluid hero-image"
+                src="images/hero-image.jpg"
+                alt="Kod på en skärm som visar HTML och JavaScript i en mörk utvecklingsmiljö"
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- De tre huvudinämnena presenteras som kort. -->
+      <section class="section" id="grunder">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">DE TRE GRUNDERNA</p>
+            <h2>Börja i rätt ordning</h2>
+          </div>
+
+          <!-- .row grupperar korten; .col-md-4 ger ett kort en tredjedel av radens bredd. -->
+          <div class="row">
+            <article class="col-md-4 mb-4">
+              <!-- .h-100 gör att kort i samma rad får lika höjd. -->
+              <div class="card h-100 insight-card">
+                <div class="card-body">
+                  <span class="step" aria-hidden="true">01</span>
+                  <h3 class="h5 card-title">HTML &amp; CSS</h3>
+                  <p class="card-text">HTML skapar innehållet. CSS beskriver färg, storlek och placering.</p>
+                  <code>&lt;p class="intro"&gt;Hej!&lt;/p&gt;</code>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mb-4">
+              <div class="card h-100 insight-card">
+                <div class="card-body">
+                  <span class="step" aria-hidden="true">02</span>
+                  <h3 class="h5 card-title">Bootstrap</h3>
+                  <p class="card-text">Bootstrap ger färdig responsiv struktur med grid, komponenter och hjälpklasser.</p>
+                  <code>&lt;div class="col-md-6"&gt;...&lt;/div&gt;</code>
+                </div>
+              </div>
+            </article>
+
+            <article class="col-md-4 mb-4">
+              <div class="card h-100 insight-card">
+                <div class="card-body">
+                  <span class="step" aria-hidden="true">03</span>
+                  <h3 class="h5 card-title">Vibe coding</h3>
+                  <p class="card-text">Beskriv målet tydligt, bygg steg för steg och testa alltid resultatet.</p>
+                  <code>"Skapa ett kort med hög kontrast"</code>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Här syns konkreta exempel på HTML, Bootstrap och CSS. -->
+      <section class="section section-light" id="exempel">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">KODA DET SJÄLV</p>
+            <h2>Ett litet komplett exempel</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <div class="code-heading">
+                <h3 class="h6 code-title mb-0">HTML + Bootstrap-grid</h3>
+              </div>
+              <!-- <pre> bevarar radbrytningar och indrag i kodexemplet. -->
+              <pre id="html-example"><code>&lt;div class="row"&gt;
+  &lt;div class="col-md-6"&gt;
+    Innehåll
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="col-lg-6">
+              <div class="code-heading">
+                <h3 class="h6 code-title mb-0">CSS</h3>
+              </div>
+              <!-- Detta exempel visar hur en CSS-klass kan styla HTML-elementet. -->
+              <pre id="css-example"><code>.intro {
+  color: #14213d;
+  font-size: 1.125rem;
+}</code></pre>
+            </div>
+          </div>
+
+          <div class="vibe-note mt-4">
+            <strong>Vibe coding:</strong> Be om ett tydligt resultat, ange färger och layout, och fråga sedan om en ändring i taget.
+          </div>
+
+          <!-- <details> och <summary> skapar en tillgänglig utfällbar hjälpruta. -->
+          <details class="help-panel mt-4">
+            <summary>Behöver du hjälp att komma igång?</summary>
+            <ul class="mb-0">
+              <li>Testa först HTML och CSS i separata filer.</li>
+              <li>Lägg Bootstrap-CDN:n i <code>&lt;head&gt;</code> före din egen CSS.</li>
+              <li>Kontrollera resultatet i webbläsarens mobilvy.</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="mb-0">ITE130 · Interaktiva användargränssnitt</p>
+      </div>
+    </footer>
+  </body>
+</html>
